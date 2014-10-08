@@ -5,6 +5,7 @@ body {
 }
  
 .card {
+  cursor: pointer;
   position: relative;
   float: left;
   margin-right: 10px;
