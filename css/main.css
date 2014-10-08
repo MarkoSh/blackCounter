@@ -7,16 +7,15 @@ body {}
   float: left;
   position: relative;
   margin-right: 10px;
-  width: 80px;
-  height: 120px;
+  width: 78px;
+  height: 110px;
   border-radius: 10px;
-  background: #fff;
   -webkit-box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
   box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
 }
 .card p {
   text-align: center;
-  font: 60px/120px Verdana, Georgia, Times New Roman, serif;
+  font: 60px/110px Verdana, Georgia, Times New Roman, serif;
 }
 .suitdiamonds:before, .suitdiamonds:after {
   content: "♦";
@@ -38,7 +37,8 @@ body {}
   color: #000;
 }
 .back {
-	background: url(images/back.jpg) black;
+	background: url(../images/back.jpg) no-repeat;
+	background-size: contain;
 }
 div[class*='suit']:before {
   position: absolute;
