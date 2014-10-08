@@ -39,6 +39,9 @@ body {
   content: "♠";
   color: #000;
 }
+.back {
+	background: url(images/back.jpg) black;
+}
 div[class*='suit']:before {
   position: absolute;
   left: 5px;
