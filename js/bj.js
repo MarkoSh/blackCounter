@@ -25,32 +25,32 @@ var cardNames = {
     13: 'King'
 };
 
-// A Single Card Constructor
+// Конструктор карты
 var Card = function (s, n) {
     var suit = s;
     var number = n;
 
-    //getter: suit number
+    //getter: номер масти
     this.getSuitNum = function () {
         return suit;
     };
 
-    //getter: suit name
+    //getter: масть карты
     this.getSuit = function () {
         return cardSuits[suit];
     };
 
-    //getter: card number
+    //getter: номер карты
     this.getCardNum = function () {
         return number;
     };
 
-    //getter: card name
+    //getter: имя карты
     this.getCard = function () {
         return cardNames[number];
     };
 
-    //getter: card number actual value calculator (A/1 -> 11, K/13 -> 10, Q/12 -> 10, J/11 -> 10)
+    //getter: калькулятор значений карт (A/1 -> 11, K/13 -> 10, Q/12 -> 10, J/11 -> 10)
     this.getValue = function () {
         if (number === 11 || number === 12 || number === 13) {
             return 10
@@ -64,7 +64,7 @@ var Card = function (s, n) {
     }
 };
 
-//deal a random card
+//сдать случайную карту
 function deal() {
     var randSuit = Math.floor(Math.random() * 4 + 1);
     var randNumber = Math.floor(Math.random() * 13 + 1);
@@ -72,16 +72,16 @@ function deal() {
     return new Card(randSuit, randNumber);
 }
 
-//Hand constructor containing a list of cards
+//Конструктор руки с подсчетом карт
 var Hand = function () {
     var cards = [deal(), deal()];
 
-    //getter: list of cards in a hand
+    //getter: список карт в руке
     this.getHand = function () {
         return cards;
     };
 
-    //getter: calculate cards score
+    //getter: подсчет карт
     this.score = function () {
         var totalScore = 0;
         var aces = 0;
@@ -96,7 +96,7 @@ var Hand = function () {
         return totalScore;
     };
 
-    //getter: human readable list of cards
+    //getter: человекопонятный список карт
     this.print = function () {
         var hands = [];
 
@@ -108,7 +108,7 @@ var Hand = function () {
         return hands.join(', ');
     };
 
-    //deal/add another card into the hand
+    //сдать/добавить другие карты
     this.hitMe = function () {
         cards.push(deal());
     };
