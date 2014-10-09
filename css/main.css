@@ -54,3 +54,8 @@ div[class*='suit']:after {
   right: 5px;
   bottom: 5px;
 }
+
+.dealer .back, .hand .card:first-child {
+	margin-right: -15px;
+	margin-top: 30px;
+}
