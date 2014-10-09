@@ -15,7 +15,7 @@ body {}
 }
 .card p {
   text-align: center;
-  font: 60px/110px Verdana, Georgia, Times New Roman, serif;
+  font: 60px/110px Tahoma, Verdana, Georgia, Times New Roman, serif;
 }
 .suitdiamonds:before, .suitdiamonds:after {
   content: "♦";
