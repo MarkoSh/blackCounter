@@ -13,6 +13,9 @@ body {}
   -webkit-box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
   box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
 }
+.deck .card, .out .card {
+	margin-left: -60px;
+}
 .card p {
   text-align: center;
   font: 60px/110px Tahoma, Verdana, Georgia, Times New Roman, serif;
