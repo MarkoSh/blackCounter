@@ -71,7 +71,8 @@ function deal() {
 
     return new Card(randSuit, randNumber);
 }
-
+//todo
+// сделать возможность сплитовать сдачу, если карты одинаковые выпали игроку, то он может разделить их на две руки
 //Конструктор руки с подсчетом карт
 var Hand = function () {
     var cards = [deal(), deal()];
